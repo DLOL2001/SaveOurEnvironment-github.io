@@ -1,0 +1,104 @@
+/* Major Elements */
+body{background-color: white; color: black; border: 20px double black; min-width: fit-content; min-height: fit-content;}
+.header{display: flex; flex-wrap: wrap; justify-content: space-between; background-image: url(header.jfif); background-repeat: no-repeat; background-size: 100%, 100%; border-bottom: 8px solid black; padding: 20px;}
+.footer{display: flex; flex-wrap: wrap; justify-content: space-around; align-content: center; color: white; border-top: 8px solid black; padding: 20px; background-image: url(footer.jfif); background-repeat: no-repeat; background-size: 100%, 100%;}
+
+/* Minor Elements */
+.h1{background-color: rgb(62, 219, 62); color: green; padding: 8px; border: 10px solid green; border-radius: 10px;}
+.h2{background-color: rgb(140, 206, 41); color: white; padding: 10px; margin: 20px; border: 10px solid green; border-radius: 10px; max-width: fit-content;}
+.h3{font-size: 24px; font-weight: bold; text-decoration: underline;}
+p{font-size: 22px; font-weight: bold; text-align: justify;}
+li{display: inline-block; font-weight: bold; font-size: 20px; margin: 5px; padding: 8px;}
+img{display: block; margin-bottom: 8px; width: 200px; height: 200px;}
+a{color: white; text-decoration: none;}
+
+/* Class & ID */
+.container{display: flex; flex-wrap: wrap; flex-direction: column; min-width: fit-content;}
+.content{background-color: white; padding: 10px; padding-left: 10%; padding-right: 10%;}
+.form{display: flex; flex-direction: row;}
+.formIMG{width: 250px; height: 700px; margin: 50px; margin-top: 100px;}
+.navlist{display: inline-block; background-color: rgb(62, 219, 62); border: 10px solid green; border-radius: 10px; font-weight: bold; font-size: 20px; padding: 8px;}
+.dropdown{position: relative;}
+.language{background-color: rgb(62, 219, 62); color: white; border: 10px solid green; font-weight: bold; font-size: 18px; padding: 10px;}
+.dropdownM{display: flex; flex-direction: column; gap: 10px; position: absolute; padding: .6875rem; top: calc(100%); background-color: rgb(140, 206, 41); border: 8px solid green; border-top: none; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px; opacity: 0; pointer-events: none; transform: translateY(-10px); transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;}
+.dropdown.active > .language + .dropdownM{opacity: 1; pointer-events: auto; transform: translateY(0);}
+.aboutUs{background-color: rgb(140, 206, 41); color: green; padding: 10px; border: 10px solid green; border-radius: 10px; margin: 5px; width: 850px; height: 220px;}
+.aboutUsDtl{font-size: 18px; font-weight: bold; color: white;}
+.media{display: flex; flex-direction: column; background-color: rgb(62, 219, 62); color: green; padding: 8px; border: 10px solid green; border-radius: 10px; margin: 5px; width: 200px; height: 220px;}
+.mediaItm{display: flex; flex-direction: row; font-size: 20px; font-weight: bold; color: white; margin: 10px;}
+.mediaIMG{display: inline-block; margin: 2px; width: 20px; height: 20px;}
+
+/* General */
+.general{display: flex; flex-direction: column; margin: 80px; border: 10px double rgb(62, 219, 62); max-width: fit-content;}
+.generalH{font-size: 40px; font-weight: bold; text-align: center; background-color: rgb(62, 219, 62); border: 20px ridge green; padding: 20px; margin: 20px;}
+.generalB{display: flex; flex-direction: row;}
+.generalHH{font-size: 28px; font-weight: bold; text-align: center; color: green;}
+.generalOPT{display: flex; flex-direction: row; justify-content: space-around;}
+
+/* Account */
+.accountD{background-color: white; border: 20px groove green; margin: 20px; padding: 20px;}
+.accountIMG{width: 220px; height: 220px; margin: 20px; border: 20px groove green;}
+
+/* Login Section */
+.loginP{display: flex; flex-direction: column;}
+.loginIMG{width: 350px; height: 780px; margin: 20px; border: 20px groove green;}
+.loginU{background-color: white; border: 20px groove green; margin: 20px; padding: 10px;}
+.loginF{margin: 20px; padding: 10px;}
+.loginG{background-color: white; border: 20px ridge green; margin: 20px; padding: 10px;} 
+
+/* Intro Section*/
+.intro{background-color: rgb(255, 232, 101); border:10px solid rgb(255, 153, 0); color: rgb(255, 123, 0); margin: 10px; padding: 10px; border-radius: 10px;}
+.introHead{background-color: white; color: rgb(255, 123, 0);  max-width: fit-content; padding: 10px; border: 10px solid rgb(255, 153, 0); border-radius: 10px;}
+
+/* Threats Section*/
+.threats{background-color: rgb(255, 170, 170); border:10px solid red; color: red; margin: 10px; padding: 10px; border-radius: 10px; min-width: fit-content;}
+.threatsHead{background-color: white; color: red;  max-width: fit-content; padding: 10px; border: 10px solid red; border-radius: 10px;}
+.threatsList{display: inline-block; text-align: center; font-weight: bold; margin: 20px; list-style-type: none; color: red; font-size: 20px;}
+.threatsImg{border: 10px solid red;}
+.threatsInfo{display: none; float: left; height: 280px; width: 430px; background-color: rgb(255, 152, 200); border: 10px solid rgb(255, 0, 98); color: rgb(255, 0, 76); border-radius: 10px; margin: 10px; padding: 10px;}
+.threatsInfoHead{background-color: white; color: rgb(255, 0, 76);  max-width: fit-content; border: 10px solid rgb(255, 0, 76); border-radius: 10px; margin: 5px;}
+
+/* Solutions Section*/
+.solution{background-color: rgb(172, 172, 255); border:10px solid blue; color: blue; margin: 10px; padding: 10px; border-radius: 10px; min-width: fit-content; clear: both;}
+.solutionsHead{background-color: white; color: blue;  max-width: fit-content; padding: 10px; border: 10px solid blue; border-radius: 10px;}
+.solutionsList{display: inline-block; text-align: center; font-weight: bold; margin: 20px; list-style-type: none; color: blue; font-size: 20px;}
+.solutionsImg{border: 10px solid blue;}
+.solutionsInfo{display: none; float: left; height: 280px; width: 430px; background-color: plum; border: 10px solid rgb(190, 1, 190); color: rgb(190, 1, 190); border-radius: 10px; margin: 10px; padding: 10px;}
+.solutionsInfoHead{background-color: white; color: rgb(190, 1, 190);  max-width: fit-content; border: 10px solid rgb(190, 1, 190); border-radius: 10px; margin: 5px;}
+
+/* Form */
+form{display: flex; flex-direction: column; background-color: white; margin: 80px;}
+fieldset{text-align: center; border: 10px solid green; max-width: fit-content; padding: 10px;}
+legend{font-size: 32px; font-weight: bold; color: green; background-color: rgb(62, 219, 62); border: 10px solid green; border-radius: 10px; padding: 8px;}
+label{display: block; margin: 20px; font-size: 25px; font-weight: bold; color: green;}
+input{display: inline-block; background-color: rgb(62, 219, 62); color: black; border: 5px solid green; font-size: 18px; font-weight: bold; padding: 5px;}
+input[type="radio"]{margin-left: 20px;}
+input[type="email"]{width: 280px;}
+textarea{vertical-align: top; height: 100px; width: 300px; background-color: rgb(62, 219, 62); color: black; border: 5px solid green; font-size: 20px; font-weight: bold; padding: 10px;} 
+button[type="submit"]{display: inline-block; color: green; background-color: rgb(62, 219, 62); font-size: 24px; font-weight: bold; max-width: fit-content; border:5px solid green; border-radius: 10px; margin: 20px; padding: 5px;}
+
+/* Details Section */
+.details{text-align: center; border: 10px solid rgb(255, 153, 0); min-width: 500px; min-height: 300px; padding: 10px; margin: 10px;}
+.details0{font-size: 32px; font-weight: bold; color: rgb(255, 153, 0); background-color: gold; border: 10px solid rgb(255, 153, 0); border-radius: 10px; padding: 8px;}
+.details1{display: block; margin: 20px; font-size: 25px; font-weight: bold; color: rgb(255, 153, 0)}
+.details2{display: inline-block; background-color: gold; border: 5px solid rgb(255, 153, 0);}
+
+/* Suggestion Section */
+.suggestions{text-align: center; border: 10px solid blue; max-width: fit-content; padding: 10px; margin: 10px;}
+.suggestions0{font-size: 32px; font-weight: bold; color: blue; background-color: rgb(142, 142, 255); border: 10px solid blue; border-radius: 10px; padding: 8px;}
+.suggestions1{display: inline-block; background-color: rgb(142, 142, 255); border: 5px solid blue;}
+
+/* Complaint Section */
+.complaints{text-align: center; border: 10px solid red; max-width: fit-content; padding: 10px; margin: 10px;}
+.complaints0{font-size: 32px; font-weight: bold; color: red; background-color: rgb(253, 142, 142); border: 10px solid red; border-radius: 10px; padding: 8px;}
+.complaints1{display: inline-block; background-color: rgb(253, 142, 142); border: 5px solid red;}
+
+/* Extra */
+.extra{display: flex; flex-direction: row; flex-wrap: wrap;}
+.vid1{border: 10px solid red;}
+.vid2{border: 10px solid blue;}
+iframe{width: 625px; height: 325px; border-radius: 10px; margin: 20px;}
+table{color: white; width: 650px; height: 500px; font-size: 20px; font-weight: bold; text-align: center; margin: 20px;}
+table.TE1 tr, table.TE1 th, table.TE1 td{border: 2px solid red; padding: 10px;}
+table.TE2 tr, table.TE2 th, table.TE2 td{border: 2px solid blue; padding: 10px;}
+td{color: black; background-color: white;}

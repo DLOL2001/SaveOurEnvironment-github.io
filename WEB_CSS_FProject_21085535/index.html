@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Save Our Environment - Log In</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="design.css">
+        <style>
+            body{background-color: black;}
+            button[type="submit"]{color: white; border: 10px solid green; font-size: 22px;}
+            .generalHH{text-decoration: underline;}
+        </style>
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <div class="general">
+            <div class="generalH"><header>Save Our Enviroment</header></div>
+            <div class="generalB">
+                <img src="login.jfif" alt="nature" class="loginIMG">
+                <div class="loginP">
+                    <div class="loginU">
+                        <h1 class="generalHH">Members Login</h1>
+                        <form action="home.html" method="post" class="loginF" id="lForm">
+                            <label for="email">Email:
+                                <input type="email" id="email" name="email" required>
+                            </label>
+                            <label for="lPassword">Password:
+                                <input type="password" id="lPassword" name="lPassword" required>
+                            </label>
+                            <button type="submit" onclick="login()">Log In</button>
+                        </form>
+                    </div>
+                    <div class="loginG">
+                        <h1 class="generalHH">Guest Visits</h1>
+                        <div class="generalOPT">              
+                            <div class="navlist" style="font-size: 22px;"><a href="home.html">Home</a></div>
+                            <div class="navlist" style="font-size: 22px;"><a href="signup.html">Sign Up</a></div>
+                        </div>
+                    </div>
+                    <div class="generalH" style="font-size: 30px;">Enjoy Your Visit</div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

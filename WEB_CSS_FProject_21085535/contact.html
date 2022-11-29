@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Save Our Planet - Contact</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="design.css">
+        <style>
+            /* Form */
+            form{flex-direction: row;}         
+            textarea{height: 200px; width: 250px;}
+            button{align-self: flex-end;}
+
+            @media (max-width: 2000px){
+                form{flex-wrap: wrap;}
+                textarea{width: 480px;}
+            }
+        </style>
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <div class="container">
+            <header class="header"><h1 class="h1">Tell Us Your Thoughts</h1>
+                <nav>
+                    <ul>
+                        <li><div class="navlist"><a href="home.html">Home</a></div></li>
+                        <li><div class="navlist"><a href="extra.html">Extra</a></div></li>
+                        <li><div class="navlist"><a href="signup.html">Join Us</a></div></li>
+                        <li><div class="dropdown" data-dropdown><button class="language" data-dropdown-button>Language</button>
+                        <div class="dropdownM">
+                            <a href="index.html">Malay</a>
+                            <a href="index.html">English</a>
+                            <a href="index.html">Mandrain</a>
+                        </div></li>   
+                    </ul>
+                </nav>
+            </header>
+            <div class="content">
+                <h2 class="h2">Share your opinion with us.</h2>
+                <h2 class="h2">Both your SUGGESTION and COMPLAINT regarding our goals or missions are equally important for us to improve.</h2>
+                <div class="form">
+                    <form action="contact.html" method="post">
+                        <fieldset class="details">
+                            <legend class="details0">Your Details</legend>
+                                <label for="firstname" class="details1">First Name:                
+                                    <input class="details2" type="text" id="firstname" name="firstname" required>
+                                </label>
+                                <label for="lastname" class="details1">Last Name:
+                                    <input class="details2" type="text" id="lastname" name="lastname" required>
+                                </label>
+                                <label for="gender" class="details1">Gender:
+                                    <input type="radio" id="gender" name="gender" required>Male
+                                    <input type="radio" id="gender" name="gender" required>Female
+                                </label>
+                                <label for="email" class="details1">Email:
+                                    <input class="details2" type="email" id="email" name="email" required>
+                                </label>
+                        </fieldset>
+                        <fieldset class="suggestions">
+                            <legend class="suggestions0">Suggestions</legend>
+                            <textarea class="suggestions1" required></textarea>
+                        </fieldset>
+                        <fieldset class="complaints">
+                            <legend class="complaints0">Complaints</legend>
+                            <textarea class="complaints1" required></textarea>
+                        </fieldset>
+                        <button type="submit" onclick="contact()">Submit</button>
+                    </form>
+                </div>
+            </div>
+            <footer class="footer">
+                <div class="aboutUs">
+                    <h3 class="h3">About Us</h3>
+                    <p class="aboutUsDtl">EVN is a non government organisation dedicated to raising public awareness on environmental problems, ranging from pollution to natural disaster. We firmly believe that if the public are aware of the severity of these issues, they will take up arms and join us in saving our planet, our home by practising eco-friendly habits and supporting related campaigns no matter who and where they are. Through our voices and actions, we know that it is possible to revert our fate as a dying species to a flourishing one by protecting and preserving a sustainable environment for our future generations.</p>
+                </div>
+                <div class="media">
+                    <h3 class="h3">Find Us On:</h3>
+                    <div class="mediaItm"><img src="twitter.png" alt="Twitter" class="mediaIMG"><a href="https://twitter.com/i/flow/login">Twitter</a></div>
+                    <div class="mediaItm"><img src="instagram.png" alt="Instagram" class="mediaIMG"><a href="https://www.instagram.com/accounts/login/">Instagram</a></div>
+                    <div class="mediaItm"><img src="facebook.png" alt="Facebook" class="mediaIMG"><a href="https://www.facebook.com/">Facebook</a></div>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

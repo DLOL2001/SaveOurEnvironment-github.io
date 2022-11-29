@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Save Our Planet - Sign Up</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="design.css">
+        <style>
+            /* Form */
+            .form{min-width: fit-content;}
+            form{width: 500px;}
+
+            @media(max-width: 1500px){
+                .form{flex-wrap: wrap;}
+                .formIMG{width: 150px; height: 600px; margin: 20px; margin-top: 75px;}
+                form{margin: 20px; width: 500px;}
+            }
+        </style>
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">
+                <h1 class="h1">Join Our Effort</h1>
+                <nav>
+                    <ul>
+                        <li><div class="navlist"><a href="home.html">Home</a></div></li>
+                        <li><div class="navlist"><a href="extra.html">Extra</a></div></li>
+                        <li><div class="navlist"><a href="contact.html">Contact Us</a></div></li>
+                        <li><div class="dropdown" data-dropdown><button class="language" data-dropdown-button>Language</button>
+                        <div class="dropdownM">
+                            <a href="index.html">Malay</a>
+                            <a href="index.html">English</a>
+                            <a href="index.html">Mandrain</a>
+                        </div></li>   
+                    </ul>
+                </nav>
+            </header>
+            <div class="content">
+                <h2 class="h2">Welcome Guest! It is always great to have move people supporting our cause.</h2>
+                <h2 class="h2">Complete this FORM to be part of our team that aims to help our planet recover.</h2>
+                <h2 class="h2">Subscribe to our monthly newsletter to receive news on tips and tricks each month that will help save our Planet!</h2>
+                    <div class="form">
+                        <img src="welcome.jpg" alt="welcome" class="formIMG">
+                        <form action="account.html" method="post" id="form">
+                        <fieldset>
+                            <legend>Welcome</legend>
+                                <label for="firstname">First Name:
+                                    <input type="text" id="firstname" name="firstname" required>
+                                </label>
+                                <label for="lastname">Last Name:
+                                    <input type="text" id="lastname" name="lastname" required>
+                                </label>
+                                <label for="gender">Gender:
+                                    <input type="radio" id="gender" name="gender" required>Male
+                                    <input type="radio" id="gender" name="gender" required>Female
+                                </label>
+                                <label for="email">Email:
+                                    <input type="email" id="email" name="email" required>
+                                </label>
+                                <label for="password">Password:
+                                    <input type="password" id="password" name="password" required>
+                                </label>
+                                <label for="address">Address:
+                                    <textarea id="address" name="address" required></textarea>
+                                </label>
+                                <label for sub>Subscribe to our Newsletter:
+                                    <input type="checkbox" id="sub" name="newsletter">
+                                </label>
+                                <button type="submit">Submit</button>
+                        </fieldset>
+                        </form>
+                    </div>
+            </div>
+            <footer class="footer">
+                <div class="aboutUs">
+                    <h3 class="h3">About Us</h3>
+                    <p class="aboutUsDtl">EVN is a non government organisation dedicated to raising public awareness on environmental problems, ranging from pollution to natural disaster. We firmly believe that if the public are aware of the severity of these issues, they will take up arms and join us in saving our planet, our home by practising eco-friendly habits and supporting related campaigns no matter who and where they are. Through our voices and actions, we know that it is possible to revert our fate as a dying species to a flourishing one by protecting and preserving a sustainable environment for our future generations.</p>
+                </div>
+                <div class="media">
+                    <h3 class="h3">Find Us On:</h3>
+                    <div class="mediaItm"><img src="twitter.png" alt="Twitter" class="mediaIMG"><a href="https://twitter.com/i/flow/login">Twitter</a></div>
+                    <div class="mediaItm"><img src="instagram.png" alt="Instagram" class="mediaIMG"><a href="https://www.instagram.com/accounts/login/">Instagram</a></div>
+                    <div class="mediaItm"><img src="facebook.png" alt="Facebook" class="mediaIMG"><a href="https://www.facebook.com/">Facebook</a></div>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
